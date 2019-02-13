@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myCenter"
+    android:orientation="vertical">
+
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+
+        android:id="@+id/slidingmenulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 左边弹出布局区 -->
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:orientation="vertical">
+
+            <!--圆形头像-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/headImage"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/fbutton_default_padding_left"
+                android:layout_centerInParent="true"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <!--昵称和账号-->
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textColor="@color/userNameColor" />
+
+            <Button
+                android:id="@+id/msg"
+                style="@style/MenuTabText"
+                android:autoLink="all"
+                android:background="@color/myCenter"
+                android:clickable="true"
+                android:drawableLeft="@drawable/xiaoxi"
+                android:drawableRight="@drawable/zhixiang_right"
+                android:focusable="true"
+                android:text="消息中心" />
+
+            <Button
+                android:id="@+id/mytrip"
+                style="@style/MenuTabText"
+                android:background="@color/myCenter"
+                android:clickable="true"
+                android:drawableLeft="@drawable/wodexingchen"
+                android:drawableRight="@drawable/zhixiang_right"
+                android:focusable="true"
+                android:text="我的行程" />
+
+            <Button
+                android:id="@+id/setup"
+                style="@style/MenuTabText"
+                android:background="@color/myCenter"
+                android:clickable="true"
+                android:drawableLeft="@drawable/shezhi"
+                android:drawableRight="@drawable/zhixiang_right"
+                android:focusable="true"
+                android:text="基本设置" />
+
+        </LinearLayout>
+
+    </com.jeremyfeinstein.slidingmenu.lib.SlidingMenu>
+
+</LinearLayout>

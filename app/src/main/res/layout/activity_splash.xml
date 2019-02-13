@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/first" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhuyong.countdownciew.CountDownView
+            android:id="@+id/countDown"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right|top"
+            app:cd_animator_time="3"
+            app:cd_animator_time_unit="S"
+            app:cd_arc_color="#000000"
+            app:cd_arc_width="2dp"
+            app:cd_bg_color="#AFF2F2"
+            app:cd_circle_radius="40dp"
+            app:cd_location="right"
+            app:cd_retreat_type="forward"
+            app:cd_text_color="#FF4081"
+            app:cd_text_size="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

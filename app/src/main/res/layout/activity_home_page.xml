@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homePageLabel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.HomePageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/homePageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:qmui_topbar_bg_color="@color/Skyblue" />
+
+        <!--数据显示区域-->
+        <com.zhouyou.recyclerview.XRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/bmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:bmb_buttonEnum="textOutsideCircle"
+            app:bmb_dimColor="@color/fbutton_color_nephritis"
+            app:bmb_highlightedColor="@color/fbutton_color_alizarin"
+            app:bmb_normalColor="@color/fbutton_color_peter_river"
+            app:bmb_buttonPlaceEnum="buttonPlace_sc_1"
+            app:bmb_piecePlaceEnum="piecePlace_dot_1" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">一程</string>
+    <string name="homePage">首页</string>
+    <string name="individualCenter">个人中心</string>
+    <string name="tyre">功能菜单</string>
+    <string name="text_back">返回</string>
+    <string name="text_forward">提交</string>
+    <string name="individualTitle">个人中心</string>
+    <string name="oneKeyFullRead">全部已读</string>
+    <string name="Complete">完成</string>
+    <string name="Error">错误</string>
+    <string name="Upload">重新加载</string>
+    <string name="release">发表</string>
+    <string name="submit">提交</string>
+    <string name="join">进入体验</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_individual_show">IndividualShowActivity</string>
+</resources>
